@@ -1,0 +1,500 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width">
+  <meta charset="utf-8">
+  <title>JJ - Perfil</title>
+  <link rel="shortcut icon" href="assets/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="css/dash.css">
+</head>
+
+<body>
+
+  <ul id="slide-out" class="sidenav">
+    <li class="">
+      <div class="user-view">
+        <div class="background">
+          <img src="assets/backgrounds/fundoPerfil/mb-bg-fb-01.png">
+        </div>
+        <a onclick="movePage('#editPerfil')"><img class="circle" src="assets/charter/Portraits2_01.png"></a> <br>
+        <a onclick="movePage('#editPerfil')"><span id="nickName" class="white-text nick">Nick</span></a> <br>
+        <a onclick="movePage('#editPerfil')"><span id="statusPlayer" class="white-text status">Status</span></a> <br>
+      </div>
+    </li>
+    <li><a class="sidenav-close" onclick="movePage('#editPerfil')"><i class="material-icons bgAnimate">person</i>Editar perfil</a>
+    </li>
+    <li><a class="sidenav-close" onclick="movePage('#shop')"><i class="material-icons bgAnimate">shopping_basket</i>Loja</a></li>
+    <li><a class="sidenav-close" onclick="movePage('#games')"><i class="material-icons bgAnimate">gamepad</i>Jogos</a></li>
+    <li><a class="sidenav-close" onclick="movePage('#friends')"><i class="material-icons bgAnimate">supervisor_account</i>Amigos</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a class="sidenav-close" class="subheader">Contatos</a></li>
+    <li><a class="sidenav-close" onclick="movePage('#contatos')"><i class="material-icons bgAnimate">share</i>Compartilhar</a></li>
+    <li><a class="sidenav-close" onclick="movePage('#contatos')"><i class="material-icons bgAnimate">contact_support</i>Entre em contato</a></li>
+    <li><a class="sidenav-close modal-trigger" data-target="modal2"><i class="material-icons bgAnimate" >close</i>Sair</a></li>
+  </ul>
+
+
+  <div class="containerGridPrincipal">
+
+    <div class="titlePage z-depth-1">
+      <div class="menu">
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+      <img src="assets/icon.png" alt="">JJGaming
+    </div>
+    <div class="pageView">
+      <div class="boxOpts">
+
+        <div id="editPerfil" class="editOpt">
+          <div class="row">
+            <div class="col l4 m4 s12 esq">
+              <div class="backgroundPerfil"></div>
+              <div class="perfilView"> </div>
+              <div class="bordaPerfil"></div>
+              <div id="nickNameEdit" class="nickNameView">nick</div>
+              <div id="statusPlayerEdit" contenteditable="" class="nickNameView">status</div>
+            </div>
+            <div class="col l8 m8 s12 dir">
+              <div class="row">
+                <div class="container">
+                  <div class="titleBoxP">Foto Perfil</div>
+                  <div class="boxPerfis">
+                    <div class="perfisBox">
+                      <div onclick="movePage('#shop')" class="addBTN"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="container">
+                  <div class="titleBoxP">Fundo Perfil</div>
+                  <div class="boxBgs">
+                    <div class="bgBox">
+                      <div onclick="movePage('#shop')" class="addBTN"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="container">
+                  <div class="titleBoxP">Bordas Perfil</div>
+                  <div class="boxBorders">
+                    <div class="borderBox">
+                      <div onclick="movePage('#shop')" class="addBTN"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="container">
+                  <div class="titleBoxP">Colors</div>
+                  <div class="boxColors">
+                    <div class="colorBox">
+                      <div onclick="movePage('#shop')" class="addBTN"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="shop" class="shopOpt">
+          <div class="banner">
+            <div class="fundoBanner">
+              Shop
+            </div>
+            <div class="container">
+              <div class="cardsBanner">
+                <div class="cardBanner">
+                  <div class="animateCard">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="textCardBanner">
+                    <div class="titleBanner">small Pack Dimond</div>
+                    <div class="descBanner">uma quantia generosa de diamante</div>
+                    <div class="priceBanner">R$ 1,99</div>
+                  </div>
+                </div>
+
+                <div class="cardBanner center">
+                  <div class="animation"></div>
+                  <div class="textCardBanner">
+                    <div class="titleBanner">small Pack Dimond</div>
+                    <div class="descBanner">uma quantia generosa de diamante</div>
+                    <div class="priceBanner">R$ 1,99</div>
+                  </div>
+                </div>
+
+                <div class="cardBanner">
+                  <div class="animateCard">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="textCardBanner">
+                    <div class="titleBanner">small Pack Dimond</div>
+                    <div class="descBanner">uma quantia generosa de diamante</div>
+                    <div class="priceBanner">R$ 1,99</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="games" class="gameOpt">
+          <div class="banner">
+            <div class="fundoBanner">
+              Games
+            </div>
+            <div class="container containerGame ">
+              <div class="boxSeach"><i class="material-icons">search</i> <input type="text" name="" id="" placeholder="Pesquisar jogos"></div>
+              <div class="boxGame">
+
+                <div class="games game01 row">
+                  <div class="previewGame col l4 m4 s12">
+                    <img src="assets/backgrounds/fundoPerfil/mb-bg-fb-06.png" alt="">
+                  </div>
+                  <div class="infoGame col l8 m8 s12">
+                    <div class="titleGame ">OlnyCube</div>
+                    <div class="descGame">Jogo 3D, multiplayer - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                      ea commodo consequat.</div>
+                    <div class="lastOnGame ">Última vez online: 01/01/2001</div>
+                    <div class="friendOn ">
+                      <div class="boxfriend friend01 ">
+                        <div class="perfil"><img src="assets/charter/Portraits2_12.png" alt=""></div>
+                        <div class="nick">Amiguin</div>
+                      </div>
+                      <div class="boxfriend friend02 ">
+                        <div class="perfil"><img src="assets/charter/Portraits2_02.png" alt=""></div>
+                        <div class="nick">Onia</div>
+                      </div>
+                      <div class="boxfriend friend03 ">
+                        <div class="perfil"><img src="assets/charter/Portraits2_18.png" alt=""></div>
+                        <div class="nick">JoJiJe</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div onclick="toastFavorite(1)" class="buttonFavorite">
+                    <i class="material-icons">favorite</i>
+                  </div>
+                  <div onclick="playGame('games/OnlyCube/index.html')" class="buttonPlayGame z-depth-2">
+                    <i class="material-icons">play_arrow</i>
+                  </div>
+                </div>
+
+                <div class="games game02 row">
+                  <div class="previewGame col l4 m4 s12">
+                    <img src="assets/backgrounds/fundoPerfil/mb-bg-fb-24.png" alt="">
+                  </div>
+                  <div class="infoGame col l8 m8 s12">
+                    <div class="titleGame row">Neon</div>
+                    <div class="descGame row">Jogo 2D viciante e empolgante - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat.</div>
+                    <div class="lastOnGame row">Última vez online: 01/01/2001</div>
+                    <div class="friendOn row">
+                      <div class="boxfriend friend01 row">
+                        <div class="perfil"><img src="assets/charter/Portraits2_12.png" alt=""></div>
+                        <div class="nick">Amiguin</div>
+                      </div>
+                      <div class="boxfriend friend01 row">
+                        <div class="perfil"><img src="assets/charter/Portraits2_12.png" alt=""></div>
+                        <div class="nick">Amiguin</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div onclick="toastFavorite(2)" class="buttonFavorite">
+                    <i class="material-icons">favorite</i>
+                  </div>
+                  <div onclick="playGame('games/JogoDosPontos/index.html')" class="buttonPlayGame z-depth-2 ">
+                    <i class="material-icons">play_arrow</i>
+                  </div>
+                </div>
+
+                <div class="games game03 row">
+                  <div class="previewGame col l4 m4 s12">
+                    <img src="assets/backgrounds/fundoPerfil/mb-bg-fb-01.png" alt="">
+                  </div>
+                  <div class="infoGame col l8 m8 s12">
+                    <div class="titleGame row">TreeCuter </div>
+                    <div class="descGame row">Pegue seu machado e corte as arvores pelo caminho, e se torne o maor lenhador da região!!</div>
+                    <div class="lastOnGame row">Última vez online: 22/03/2020</div>
+                    <div class="friendOn row">
+                      <div class="boxfriend friend01 row">
+                        <div class="perfil"><img src="assets/charter/Portraits2_18.png" alt=""></div>
+                        <div class="nick">oleeeeia</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div onclick="toastFavorite(3)" class="buttonFavorite">
+                    <i class="material-icons">favorite</i>
+                  </div>
+                  <div onclick="playGame('games/TreeCuter/index.html')" class="buttonPlayGame z-depth-2 modal-trigger" data-target="modal1">
+                    <i class="material-icons">play_arrow</i>
+                  </div>
+                </div>
+
+                <div class="games game04 row">
+                  <div class="previewGame col l4 m4 s12">
+                    <img src="assets/backgrounds/fundoPerfil/mb-bg-fb-12.png" alt="">
+                  </div>
+                  <div class="infoGame col l8 m8 s12">
+                    <div class="titleGame row">TowerClimb</div>
+                    <div class="descGame row">Mostre a todos sua habilidade em escaladas. Suba o mais longe possivel e deixe suar marca para todos verem!!
+                    </div>
+                    <div class="lastOnGame row">Última vez online: 23/03/2020</div>
+                    <div class="friendOn row">
+                      <div class="boxfriend friend01 row">
+                        <div class="perfil"><img src="assets/charter/Portraits2_02.png" alt=""></div>
+                        <div class="nick">Wilker</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div onclick="toastFavorite(4)" class="buttonFavorite">
+                    <i class="material-icons">favorite</i>
+                  </div>
+                  <div onclick="playGame('games/TowerClimb/index.html')" class="buttonPlayGame z-depth-2">
+                    <i class="material-icons">play_arrow</i>
+                  </div>
+                </div>
+
+                <div class="games game05 row">
+                  <div class="previewGame col l4 m4 s12">
+                    <img src="assets/backgrounds/fundoPerfil/mb-bg-fb-27.png" alt="">
+                  </div>
+                  <div class="infoGame col l8 m8 s12">
+                    <div class="titleGame row">Fearlessly</div>
+                    <div class="descGame row">Jogo Em desenvolvimento - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                      ex ea commodo consequat.</div>
+                    <div class="lastOnGame row">Última vez online: 01/01/2001</div>
+                    <div class="friendOn row">
+                      <div class="boxfriend friend01 row">
+                        <div class="perfil"><img src="assets/charter/Portraits2_12.png" alt=""></div>
+                        <div class="nick">Amiguin</div>
+                      </div>
+                      <div class="boxfriend friend01 row">
+                        <div class="perfil"><img src="assets/charter/Portraits2_12.png" alt=""></div>
+                        <div class="nick">Amiguin</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div onclick="toastFavorite(5)" class="buttonFavorite">
+                    <i class="material-icons">favorite</i>
+                  </div>
+                  <div class="buttonPlayGame z-depth-2 modal-trigger" data-target="modal1">
+                    <i class="material-icons">play_arrow</i>
+                  </div>
+                </div>
+
+                <div class="games game06 row">
+                  <div class="previewGame col l4 m4 s12">
+                    <img src="assets/backgrounds/fundoPerfil/mb-bg-fb-27.png" alt="">
+                  </div>
+                  <div class="infoGame col l8 m8 s12">
+                    <div class="titleGame row">Hous<span>E</span> </div>
+                    <div class="descGame row">Jogo Em desenvolvimento - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                      ex ea commodo consequat.</div>
+                    <div class="lastOnGame row">Última vez online: 01/01/2001</div>
+                    <div class="friendOn row">
+                      <div class="boxfriend friend01 row">
+                        <div class="perfil"><img src="assets/charter/Portraits2_12.png" alt=""></div>
+                        <div class="nick">Amiguin</div>
+                      </div>
+                      <div class="boxfriend friend01 row">
+                        <div class="perfil"><img src="assets/charter/Portraits2_12.png" alt=""></div>
+                        <div class="nick">Amiguin</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div onclick="toastFavorite(6)" class="buttonFavorite">
+                    <i class="material-icons">favorite</i>
+                  </div>
+                  <div class="buttonPlayGame z-depth-2 modal-trigger" data-target="modal1">
+                    <i class="material-icons">play_arrow</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="friends" class="friendOpt row">
+        <div class="ladoPlayers col l3 m4 s12 ">
+
+          <div class="barSup ">
+            <div class="chatSeach"><i class="material-icons">search</i> <input type="text" name="" id="" placeholder="Buscar player"></div>
+          </div>
+          <div class="players">
+            <div class="perfil online">
+              <div class="ftperfil">
+                <img src="assets/charter/Portraits2_13.png" alt="">
+              </div>
+              <div class="nkperfil">JamelãoJR</div>
+              <div class="mgperfil">ultima msg enviada...</div>
+              <div class="stperfil">online</div>
+              <div class="opperfil"><i class="material-icons">more_vert</i></div>
+            </div>
+
+            <div class="perfil offline">
+              <div class="ftperfil">
+                <img src="assets/charter/Portraits2_13.png" alt="">
+              </div>
+              <div class="nkperfil">JamelãoJR</div>
+              <div class="mgperfil">ultima msg enviada...</div>
+              <div class="stperfil">offline</div>
+              <div class="opperfil"><i class="material-icons">more_vert</i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ladoChat col l9 m8 s12 ">
+          <div class="barSup ">
+            <div class="perfil">
+              <div class="ftperfil">
+                <img src="assets/charter/Portraits2_13.png" alt="">
+              </div>
+              <div class="nkperfil">JamelãoJR</div>
+              <div class="mgperfil">offline</div>
+
+            </div>
+          </div>
+
+          <div class="barInf">
+            <div class="sendMsg"><i class="material-icons">tag_faces</i> <input type="text" name="" id="" placeholder="Enviar mensagem"><i class="material-icons">send</i></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contatos" class="contatosOpt">Contact</div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Jogo em desenvolvimento</h4>
+      <p> Estamos trabalhando mais rapido para desenvolver esse jogo, em breve iremos disponibiliza-lo.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-light btn">OK</a>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Vai me deixar só?</h4>
+      <p>Fica muito triste sem você aqui. Deseja mesmo me deixar?</p>
+    </div>
+    <div class="modal-footer">
+      <a href="index.html" class="modal-close waves-effect waves-light btn">SIM</a>
+
+      <a href="#!" class="waves-effect waves-light btn">Vou ficar</a>
+    </div>
+  </div>
+
+
+  <!-- Face Rbot -->
+
+  <!-- animation -->
+  <div class="animationTransition">
+    <svg>
+            <path
+                d=" M 1297.7 1414.75 L 1297.7 1470.8 L 1297.7 1470.8 C 1297.7 1489.648 1282.398 1504.95 1263.55 1504.95 
+                C 1244.702 1504.95 1229.4 1489.648 1229.4 1470.8 L 1229.4 1470.8 L 1229.4 168.85 L 1229.4 1414.75 C 1229.4 
+                1395.902 1214.098 1380.6 1195.25 1380.6 C 1176.402 1380.6 1161.1 1395.902 1161.1 1414.75 L 1161.1 1414.75 L 
+                1161.1 168.85 L 1161.1 168.85 C 1161.1 187.698 1176.402 203 1195.25 203 C 1214.098 203 1229.4 187.698 1229.4 
+                168.85 L 1229.4 168.85 L 1229.4 124.15 L 1229.4 124.15 C 1229.4 105.302 1244.702 90 1263.55 90 C 1282.398 90 
+                1297.7 105.302 1297.7 124.15 L 1297.7 124.15 L 1297.7 1414.749 L 1297.7 182.5 L 1297.7 182.5 C 1297.7 201.348 
+                1313.002 216.65 1331.85 216.65 C 1350.698 216.65 1366 201.348 1366 182.5 L 1366 182.5 L 1366 1414.75 C 1366 
+                1395.902 1350.698 1380.6 1331.85 1380.6 C 1313.002 1380.6 1297.7 1395.902 1297.7 1414.75 Z  M 1092.8 1380.6 C 
+                1092.8 1361.752 1077.498 1346.45 1058.65 1346.45 C 1039.802 1346.45 1024.5 1361.752 1024.5 1380.6 L 1024.5 
+                1505.125 L 1024.5 1505.125 C 1024.5 1523.973 1009.198 1539.275 990.35 1539.275 C 971.502 1539.275 956.2 
+                1523.973 956.2 1505.125 L 956.2 1505.125 L 956.2 1439.95 L 956.2 1439.95 C 956.2 1421.102 940.898 1405.8 
+                922.05 1405.8 C 903.202 1405.8 887.9 1421.102 887.9 1439.95 L 887.9 1439.95 L 887.9 1455.95 L 887.9 
+                1455.95 C 887.9 1474.798 872.598 1490.1 853.75 1490.1 C 834.902 1490.1 819.6 1474.798 819.6 1455.95 L
+                819.6 1455.95 L 819.6 1380.6 C 819.6 1361.752 804.298 1346.45 785.45 1346.45 C 766.602 1346.45 751.3 1361.752 
+                751.3 1380.6 L 751.3 1380.6 L 751.3 1380.6 L 751.3 1380.6 L 751.3 182.5 L 751.3 182.5 L 751.3 182.5 C 751.3 
+                201.348 766.602 216.65 785.45 216.65 C 804.298 216.65 819.6 201.348 819.6 182.5 L 819.6 182.5 L 819.6 182.5 L 
+                819.6 124.15 L 819.6 124.15 C 819.6 105.302 834.902 90 853.75 90 C 872.598 90 887.9 105.302 887.9 124.15 L 
+                887.9 124.15 L 887.9 134.7 C 887.9 153.548 903.202 168.85 922.05 168.85 C 940.898 168.85 956.2 153.548 956.2 
+                134.7 L 956.2 103.675 L 956.2 103.675 C 956.2 84.827 971.502 69.525 990.35 69.525 C 1009.198 69.525 1024.5 
+                84.827 1024.5 103.675 L 1024.5 103.675 L 1024.5 114.2 L 1024.5 114.2 C 1024.5 133.048 1039.802 148.35 1058.65 
+                148.35 C 1077.498 148.35 1092.8 133.048 1092.8 114.2 L 1092.8 34.15 L 1092.8 34.15 C 1092.8 15.302 1108.102 0 
+                1126.95 0 C 1145.798 0 1161.1 15.302 1161.1 34.15 L 1161.1 34.15 L 1161.1 1405.8 L 1161.1 1405.8 C 1161.1 
+                1424.648 1145.798 1439.95 1126.95 1439.95 C 1108.102 1439.95 1092.8 1424.648 1092.8 1405.8 L 1092.8 1405.8 L 
+                1092.8 1380.6 L 1092.8 1380.6 L 1092.8 1380.6 L 1092.8 1380.6 Z  M 683 1351.25 C 683 1332.402 667.698 1317.1 
+                648.85 1317.1 C 630.002 1317.1 614.7 1332.402 614.7 1351.25 L 614.7 1439.95 L 614.7 1439.95 C 614.7 1458.798 
+                599.398 1474.1 580.55 1474.1 C 561.702 1474.1 546.4 1458.798 546.4 1439.95 L 546.4 1439.95 L 546.4 1414.75 C 
+                546.4 1395.902 531.098 1380.6 512.25 1380.6 C 493.402 1380.6 478.1 1395.902 478.1 1414.75 L 478.1 1439.95 L 
+                478.1 1439.95 C 478.1 1458.798 462.798 1474.1 443.95 1474.1 C 425.102 1474.1 409.8 1458.798 409.8 1439.95 L 
+                409.8 1439.95 L 409.8 1439.95 C 409.8 1421.102 394.498 1405.8 375.65 1405.8 C 356.802 1405.8 341.5 1421.102 
+                341.5 1439.95 L 341.5 1470.8 L 341.5 1470.8 C 341.5 1489.648 326.198 1504.95 307.35 1504.95 C 288.502 1504.95 
+                273.2 1489.648 273.2 1470.8 L 273.2 1470.8 L 273.2 1393.25 C 273.2 1374.402 257.898 1359.1 239.05 1359.1 C 
+                220.202 1359.1 204.9 1374.402 204.9 1393.25 L 204.9 1512.2 L 204.9 1512.2 C 204.9 1531.048 189.598 1546.35 
+                170.75 1546.35 C 151.902 1546.35 136.6 1531.048 136.6 1512.2 L 136.6 1512.2 L 136.6 1416.25 C 136.6 1397.402 
+                121.298 1382.1 102.45 1382.1 C 83.602 1382.1 68.3 1397.402 68.3 1416.25 L 68.3 1485.6 L 68.3 1485.6 C 68.3 
+                1504.448 52.998 1519.75 34.15 1519.75 C 15.302 1519.75 0 1504.448 0 1485.6 L 0 1485.6 L 0 103.5 L 0 103.5 C 0 
+                84.652 15.302 69.35 34.15 69.35 C 52.998 69.35 68.3 84.652 68.3 103.5 L 68.3 103.5 L 68.3 182.5 C 68.3 201.348 
+                83.602 216.65 102.45 216.65 C 121.298 216.65 136.6 201.348 136.6 182.5 L 136.6 103.5 L 136.6 103.5 C 136.6 
+                84.652 151.902 69.35 170.75 69.35 C 189.598 69.35 204.9 84.652 204.9 103.5 L 204.9 103.5 L 204.9 148.35 C 
+                204.9 167.198 220.202 182.5 239.05 182.5 C 257.898 182.5 273.2 167.198 273.2 148.35 L 273.2 141.5 L 273.2 
+                141.5 C 273.2 122.652 288.502 107.35 307.35 107.35 C 326.198 107.35 341.5 122.652 341.5 141.5 L 341.5 141.5 
+                L 341.5 168.85 C 341.5 187.698 356.802 203 375.65 203 C 394.498 203 409.8 187.698 409.8 168.85 L 409.8 103.5 
+                L 409.8 103.5 C 409.8 84.652 425.102 69.35 443.95 69.35 C 462.798 69.35 478.1 84.652 478.1 103.5 L 478.1 
+                100.55 L 478.1 100.55 C 478.1 119.398 493.402 134.7 512.25 134.7 C 531.098 134.7 546.4 119.398 546.4 100.55 
+                L 546.4 68.3 L 546.4 68.3 C 546.4 49.452 561.702 34.15 580.55 34.15 C 599.398 34.15 614.7 49.452 614.7 68.3 
+                L 614.7 68.3 L 614.7 182.5 C 614.7 201.348 630.002 216.65 648.85 216.65 C 667.698 216.65 683 201.348 683 182.5 
+                C 683 163.652 698.302 148.35 717.15 148.35 C 735.998 148.35 751.3 163.652 751.3 182.5 L 751.3 182.5 L 751.3 
+                182.5 L 751.3 1380.6 L 751.3 1413.2 L 751.3 1413.2 C 751.3 1432.048 735.998 1447.35 717.15 1447.35 C 698.302 
+                1447.35 683 1432.048 683 1413.2 L 683 1413.2 L 683 1351.25 L 683 1351.25 L 683 1351.25 L 683 1351.25 L 683 
+                1351.25 L 683 1351.25 L 683 1351.25 L 683 1351.25 L 683 1351.25 L 683 1351.25 Z  M 1366 1514.3 L 1366 182.5 L 
+                1366 182.5 L 1366 182.5 C 1366 163.652 1381.302 148.35 1400.15 148.35 C 1418.998 148.35 1434.3 163.652 1434.3 
+                182.5 L 1434.3 182.5 L 1434.3 1514.3 L 1434.3 1514.3 C 1434.3 1533.148 1418.998 1548.45 1400.15 1548.45 C 
+                1381.302 1548.45 1366 1533.148 1366 1514.3 L 1366 1514.3 L 1366 1514.3 L 1366 1514.3 L 1366 1514.3 L 1366 
+                1514.3 L 1366 1514.3 L 1366 1514.3 Z " />
+        </svg>
+  </div>
+
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/dash.js"></script>
+  <!--
+    <script src="js/Murphy.js"></script>
+    -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/wow.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('.sidenav').sidenav();
+    });
+
+    $(document).ready(function() {
+      $('.modal').modal();
+    });
+  </script>
+</body>
+
+</html>
+
+</html>

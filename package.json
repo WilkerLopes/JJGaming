@@ -1,0 +1,19 @@
+{
+  "name": "jjgaming",
+  "version": "1.2.10",
+  "description": "Um mini servidor de jogos para estudo e distração",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilkerLopes/JJGaming.git"
+  },
+  "author": "Wilker Lopes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WilkerLopes/JJGaming/issues"
+  },
+  "homepage": "https://github.com/WilkerLopes/JJGaming#readme"
+}

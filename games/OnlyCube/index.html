@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <title>Only Cube</title>
+    <link rel="shortcut icon" href="assets/icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/game.css">
+    <link rel="stylesheet" type="text/css" href="css/ads.css">
+    <link rel="stylesheet" type="text/css" href="css/geral.css">
+    <link rel="stylesheet" type="text/css" href="css/opts.css">
+</head>
+
+<body>
+    <div class="barraSup z-depth-3">
+        <div class="containerPerfil">
+            <div class="lvl">lvl: 0</div>
+            <div class="exp">
+                <div class="progresso">
+                </div>
+            </div>
+            <div onclick="opemopts()">
+                <div class="nick">
+                    <div class="nickname">JamelaoJR</div>
+                    <i class="material-icons nick-opts" id="setasBox">keyboard_arrow_down</i>
+                </div>
+                <div class="perfil"></div>
+            </div>
+
+            <div class="opts z-depth-3">
+
+                <div class="borda">
+                    <img src="assets/icon.png" alt="">
+                </div>
+                <p>JamelaoJR</p>
+                <p>Editar</p>
+                <p>Configurar</p>
+                <p class="sair">
+                    <a href="index.html">Sair</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="infoBot">
+        <div class="player">
+            <div class="lvlBot">0</div>
+        </div>
+
+        <div class="infoTop">
+            <div class="hp">500</div>
+            <div class="energia">100</div>
+            <div class="dano">59</div>
+            <div class="money">589</div>
+        </div>
+
+        <div class="slots">
+            <div class="slot" id="slot1"></div>
+            <div class="slot" id="slot2"></div>
+            <div class="slot" id="slot3"></div>
+            <div class="slot" id="slot4"></div>
+            <div class="slot" id="slot5"></div>
+            <div class="slot" id="slot6"></div>
+            <div class="slot" id="slot7"></div>
+            <div class="slot" id="slot8"></div>
+        </div>
+    </div>
+
+    <div class="controles">
+        <div class="habilq" id="habil1">
+            <div class="habil">Q </div>
+        </div>
+        <div class="habilw" id="habil2">
+            <div class="habil"> W</div>
+        </div>
+        <div class="habile" id="habil3">
+            <div class="habil">E </div>
+        </div>
+        <div class="habilr" id="habil4">
+            <div class="habil">R </div>
+        </div>
+    </div>
+    <div class="inventario">
+        <div class="personView">
+            <div class="person3D"></div>
+            <div class="boxSlotRoupa">
+                <div class="itensPerson itemCapa"></div>
+                <div class="itensPerson itemPeit"></div>
+                <div class="itensPerson itemCaLC"></div>
+                <div class="itensPerson itemSapa"></div>
+            </div>
+        </div>
+
+        <div class="boxItens">
+        </div>
+    </div>
+
+    <script src="js/three.min.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    <script src="js/ObjectLoader.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/geral.js"></script>
+
+
+</body>
+
+</html>
+
+</html>

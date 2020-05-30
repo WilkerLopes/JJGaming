@@ -1,0 +1,265 @@
+.btns {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.btnTest {
+    width: auto;
+    height: auto;
+    padding: 8px 16px;
+    color: whitesmoke;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    background: linear-gradient(45deg, rgb(54, 4, 121) 50%, rgb(11, 202, 216) 0);
+}
+
+
+/*
+ Info Top 
+ 
+<div class="money">589</div>
+<div class="hp">500</div>
+<div class="energia">100</div>
+<div class="dano">59</div>
+ */
+
+.infoTop {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.money,
+.hp,
+.energia,
+.dano {
+    border-radius: 50px;
+    width: auto;
+    height: auto;
+    padding: 2px 8px;
+    border: #222 2px dotted;
+    transition: border 1s;
+    font-size: 10px;
+}
+
+.money:hover,
+.hp:hover,
+.energia:hover,
+.dano:hover {
+    border: 2px #222;
+    border-style: dotted dotted solid dotted;
+}
+
+.money {
+    background-color: rgba(255, 217, 0, 0.5);
+}
+
+.hp {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.energia {
+    background-color: rgba(192, 243, 9, 0.5);
+}
+
+.dano {
+    background-color: rgba(255, 0, 0, 0.685);
+}
+
+.money::before {
+    content: "R$ ";
+}
+
+.hp::before {
+    content: "<3 ";
+}
+
+.energia::before {
+    content: "£ ";
+}
+
+.dano::before {
+    content: "# ";
+}
+
+
+/*
+ Info bot 
+
+<div class="infoBot">
+    <div class="player">
+        <div class="lvlBot">0</div>
+    </div>
+    <div class="slots">
+        <div class="slot slot1"></div>
+        <div class="slot slot2"></div>
+        <div class="slot slot3"></div>
+        <div class="slot slot4"></div>
+        <div class="slot slot5"></div>
+    </div>
+</div>
+*/
+
+.infoBot {
+    width: 400px;
+    height: 75px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px 0 10px 50px;
+    clip-path: polygon(0% 0%, 376px 0%, 100% 24px, 100% 100%, 0% 100%);
+}
+
+.player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    margin: 2.5;
+    background-color: burlywood;
+    background-image: url(../assets/person/black_knight_spritesheet.jpg);
+    background-position: -150px -45px;
+    background-repeat: no-repeat;
+}
+
+.lvlBot {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    transform: translateX(25%);
+    background-color: cornsilk;
+    border: blue 2px solid;
+    border-radius: 50%;
+    text-align: center;
+    font-family: "cube";
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.slots {
+    background-color: transparent;
+    width: 300px;
+    height: auto;
+    position: absolute;
+    bottom: 25.5px;
+    right: 12px;
+    transform: translateY(50%);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.slot {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid #555;
+}
+
+.slot1 {
+    background-image: url(../assets/itens/RPG\ Items.png);
+    background-position: 0 0;
+}
+
+
+/*
+Controles
+
+<div class="controles">
+    <div class="habil habilq" id="habil1"></div>
+    <div class="habil habilw" id="habil2"></div>
+    <div class="habil habile" id="habil3"></div>
+    <div class="habil habilr" id="habil4"></div>
+</div>
+*/
+
+.controles {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 350px;
+    height: 100px;
+    background-color: transparent;
+    background-color: transparent;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.habilq,
+.habilw,
+.habile {
+    width: 60px;
+    height: 60px;
+    background-color: lightgray;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px ridge gray;
+    margin-top: 40px;
+}
+
+.habilq {
+    background-image: url(../assets/texture/habilidade/fire/1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.habilw {
+    background-image: url(../assets/texture/habilidade/fire/2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.habile {
+    background-image: url(../assets/texture/habilidade/fire/3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.habilr {
+    width: 90px;
+    height: 90px;
+    background-color: lightgray;
+    border-radius: 50%;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 2px ridge gray;
+    background-image: url(../assets/texture/habilidade/fire/4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.habil {
+    background-color: #2224;
+    font-family: "CUBE";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px ridge gray;
+    color: #333;
+}
