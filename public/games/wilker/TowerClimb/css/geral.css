@@ -1,165 +1,160 @@
 @font-face {
-    font-family: "Confortaa";
-    src: url(../assets/fonts/Comfortaa-Light.ttf);
-}
-
-@font-face {
-    font-family: "Planes";
-    src: url(../assets/fonts/Planes_ValMore.ttf);
+  font-family: "Planes";
+  src: url(../assets/fonts/Planes_ValMore.ttf);
 }
 
 :root {
-    --color-01: #a52a2a;
-    --color-02: #00008b;
-    --color-03: #5C73F2;
-    --color-04: #6B8DF2;
-    --color-05: #82B8D9;
-    --color-06: #5d75fa;
+  --color-01: #a52a2a;
+  --color-02: #00008b;
+  --color-03: #5c73f2;
+  --color-04: #6b8df2;
+  --color-05: #82b8d9;
+  --color-06: #5d75fa;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: "Planes";
-    background-image: linear-gradient(rgb(237, 240, 196), #82B8D9, #6B8DF2, #5C73F2);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Planes";
+  background-image: linear-gradient(#edf0c4, #82b8d9, #6b8df2, #5c73f2);
 }
 
 .baraSup {
-    width: 100%;
-    height: 56px;
-    background-color: var(--color-01);
-    color: var(--color-02);
+  width: 100%;
+  height: 56px;
+  background-color: var(--color-01);
+  color: var(--color-02);
 }
 
 .gameView {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 .controlPane {
-    width: 100%;
-    height: calc(50% - 28px);
-    background-color: cadetblue;
+  width: 100%;
+  height: calc(50% - 28px);
+  background-color: cadetblue;
 }
 
 .score {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    padding: 4px 8px;
-    width: auto;
-    height: auto;
-    border-radius: 5px;
-    text-align: center;
-    background-color: #5C73F2;
-    border: 4px groove #6B8DF2;
-    z-index: 999;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 4px 8px;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #5c73f2;
+  border: 4px groove #6b8df2;
+  z-index: 999;
 }
 
 .score .text {
-    font-size: 0.75em;
-    color: var(--color-05);
+  font-size: 0.75em;
+  color: var(--color-05);
 }
 
 .score .value {
-    font-size: 1.25em;
-    color: #e7e783;
+  font-size: 1.25em;
+  color: #e7e783;
 }
 
 .tower {
-    width: 200px;
-    height: 110%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #5d75fa;
-    background-image: url(../assets/background/brinck.png);
-    border: 2px solid #0d0d0d;
+  width: 200px;
+  height: 110%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #5d75fa;
+  background-image: url(../assets/background/brinck.png);
+  border: 2px solid #0d0d0d;
 }
 
 .windows {
-    width: 200px;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .window {
-    background-color: #5d75fa;
-    background-image: url(../assets/background/brinck.png);
-    width: 40px;
-    height: 30px;
-    border-bottom-left-radius: 25px;
-    border: solid 1px #0d0d0d;
-    position: absolute;
+  background-color: #5d75fa;
+  background-image: url(../assets/background/brinck.png);
+  width: 40px;
+  height: 30px;
+  border-bottom-left-radius: 25px;
+  border: solid 1px #0d0d0d;
+  position: absolute;
 }
 
 .player {
-    width: 25px;
-    height: 50px;
-    background-image: url(../assets/person/Man_attack.png);
-    background-position: -50px 0;
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - (100px + 25px));
-    /*left: calc(50% + 100px)*/
+  width: 25px;
+  height: 50px;
+  background-image: url(../assets/person/Man_attack.png);
+  background-position: -50px 0;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - (100px + 25px));
+  /*left: calc(50% + 100px)*/
 }
 
 .gameControl {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 888;
-    display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 888;
+  display: flex;
 }
 
 .ldEsq {
-    width: 50%;
-    height: 100%;
+  width: 50%;
+  height: 100%;
 }
 
 .ldDir {
-    width: 50%;
-    height: 100%;
+  width: 50%;
+  height: 100%;
 }
 
 .loseGame {
-    display: none;
-    font-family: "planes";
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(#edf0c4, #82B8D9, #6B8DF2, #5C73F2);
-    color: #00008b;
-    position: relative;
+  display: none;
+  font-family: "Planes";
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#edf0c4, #82b8d9, #6b8df2, #5c73f2);
+  color: #00008b;
+  position: relative;
 }
 
 .loseGame .titleApp {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-    text-align: center;
-    z-index: 3;
-    font-size: 5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  text-align: center;
+  z-index: 3;
+  font-size: 5em;
 }
 
 .loseGame .scoreFinish {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    color: #e7e783;
-    font-size: 3em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #e7e783;
+  font-size: 3em;
 }
 
 .loseGame .scoreFinish::after {
-    content: " points";
-    font-size: 0.5em;
+  content: " points";
+  font-size: 0.5em;
 }

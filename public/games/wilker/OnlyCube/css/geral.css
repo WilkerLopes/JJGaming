@@ -1,177 +1,174 @@
-@font-face {
-    font-family: "Confortaa";
-    src: url(../assets/fonts/Comfortaa-Light.ttf);
-}
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 
 @font-face {
-    font-family: "cube";
-    src: url(../assets/fonts/04B_30__.TTF);
+  font-family: "cube";
+  src: url(../assets/fonts/cubes.TTF);
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    --border: #faf;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  --border: #444dc4;
 }
 
 .barraSup {
-    height: 42px;
-    width: 100%;
-    background-color: brown;
-    border-bottom: 1px solid yellow;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
+  height: 42px;
+  width: 100%;
+  background-color: brown;
+  border-bottom: 1px solid yellow;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .containerPerfil {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    height: 100%;
-    width: 1024px;
-    transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 1024px;
+  transform: translateX(-50%);
 }
 
 .lvl {
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: auto;
-    height: 32px;
-    line-height: 32px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: auto;
+  height: 32px;
+  line-height: 32px;
 }
 
 .exp {
-    width: 100px;
-    height: 10px;
-    background-color: rgba(0, 0, 255, 0.089);
-    border: 1px solid #333;
-    position: absolute;
-    top: 50%;
-    left: 60px;
-    transform: translateY(-50%);
-    border-radius: 10px;
-    padding: 0;
-    overflow: hidden;
+  width: 100px;
+  height: 10px;
+  background-color: rgba(0, 0, 255, 0.089);
+  border: 1px solid #333;
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  padding: 0;
+  overflow: hidden;
 }
 
 .progresso {
-    position: relative;
-    height: 100%;
-    display: block;
-    width: 0%;
-    background-color: #6ed4b6ea;
-    border-radius: 10px;
-    overflow: hidden;
-    background-image: url(../assets/Bolhas.png);
-    background-repeat: repeat;
-    animation: bolhas-animation 5s linear infinite;
-    transition: width 1s;
+  position: relative;
+  height: 100%;
+  display: block;
+  width: 0%;
+  background-color: #6ed4b6ea;
+  border-radius: 10px;
+  overflow: hidden;
+  background-image: url(../assets/Bolhas.png);
+  background-repeat: repeat;
+  animation: bolhas-animation 5s linear infinite;
+  transition: width 1s;
 }
 
 @keyframes bolhas-animation {
-    0% {
-        background-position: 0%;
-    }
-    100% {
-        background-position: -50%;
-    }
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: -50%;
+  }
 }
 
 .nick {
-    position: absolute;
-    top: 5px;
-    right: 36px;
-    width: auto;
-    height: 32px;
-    width: auto;
+  position: absolute;
+  top: 5px;
+  right: 36px;
+  width: auto;
+  height: 32px;
+  width: auto;
 }
 
 .nickname {
-    float: left;
-    height: 24px;
-    margin-top: 4px;
-    cursor: pointer;
+  float: left;
+  height: 24px;
+  margin-top: 4px;
+  cursor: pointer;
 }
 
 .nick-opts {
-    margin-top: 4px;
-    cursor: pointer;
-    transition: all 0.5s;
+  margin-top: 4px;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 
 .perfil {
-    background-image: url(../assets/icon.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 5px;
-    right: 0;
-    border-radius: 16px;
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
+  background-image: url(../assets/icon.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  border-radius: 16px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
 }
 
 .opts::after {
-    /*triangulo*/
-    content: "";
-    height: 25px;
-    width: 25px;
-    position: absolute;
-    top: 0;
-    right: 32px;
-    transform: translateY(-40%) rotate(45deg);
-    background: linear-gradient(135deg, #fafaff 50%, #0000 0%);
-    border-radius: 3px;
+  /*triangulo*/
+  content: "";
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 0;
+  right: 32px;
+  transform: translateY(-40%) rotate(45deg);
+  background: linear-gradient(135deg, #fafaff 50%, #0000 0%);
+  border-radius: 3px;
 }
 
 .opts {
-    position: absolute;
-    top: 48px;
-    right: 4px;
-    width: 250px;
-    height: 200px;
-    background-color: fafaff;
-    display: none;
-    padding: 8px;
-    border-radius: 5px;
-    font-family: "Confortaa";
+  position: absolute;
+  top: 48px;
+  right: 4px;
+  width: 250px;
+  height: 200px;
+  background-color: fafaff;
+  display: none;
+  padding: 8px;
+  border-radius: 5px;
+  font-family: "Confortaa";
 }
 
 .opts p {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .opts .borda {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    height: 100px;
-    width: 100px;
-    border: 2.5px solid var(--border);
-    border-radius: 50px;
-    background-image: url(../);
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: 100px;
+  width: 100px;
+  border: 2.5px solid var(--border);
+  border-radius: 50px;
+  background-image: url(../);
 }
 
 .borda img {
-    position: absolute;
-    width: 100px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50px;
+  position: absolute;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
 }
 
 .opts .sair {
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    cursor: pointer;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
 }
