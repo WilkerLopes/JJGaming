@@ -17,12 +17,7 @@ body {
   padding: 0;
   overflow: hidden;
   font-family: "Planes";
-  background-image: linear-gradient(
-    rgb(237, 240, 196),
-    #82b8d9,
-    #6b8df2,
-    #5c73f2
-  );
+  background-image: linear-gradient(#edf0c4, #82b8d9, #6b8df2, #5c73f2);
 }
 
 .baraSup {
@@ -132,7 +127,7 @@ body {
 
 .loseGame {
   display: none;
-  font-family: "planes";
+  font-family: "Planes";
   width: 100%;
   height: 100%;
   background-image: linear-gradient(#edf0c4, #82b8d9, #6b8df2, #5c73f2);
