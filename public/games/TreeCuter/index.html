@@ -1,129 +1,156 @@
 <html>
-
-<head>
-    <meta name="viewport" content="width=device-width">
-    <meta charset="utf-8">
-    <title>The Forest Escape</title>
-    <link rel="shortcut icon" href="assets/icon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/geral.css">
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>Tree Cuter</title>
+    <link rel="shortcut icon" href="assets/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/geral.css" />
 
     <style>
-        .preloadGame {
-            font-family: "Barones";
-            width: 100%;
-            height: 100%;
-            font-size: 5em;
-            background-color: brown;
-            color: burlywood;
-            position: relative;
-        }
-        
-        .preloadGame .titleApp {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -100%);
-            text-align: center;
-            z-index: 3;
-        }
-        
-        .preloadGame .cilcleLoad {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, 0);
-            width: 50px;
-            height: 50px;
-            border-radius: 25px;
-            border: 3px solid burlywood;
-            animation: load 2s infinite linear;
-        }
-        
-        .preloadGame .cilcleLoad div {
-            width: 50px;
-            height: 50px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            background-color: brown;
-            animation: largura 2s infinite linear;
-        }
-        
-        @keyframes load {
-            0% {
-                transform: rotate(360deg);
-            }
-            100% {
-                transform: rotate(0deg);
-            }
-        }
-        
-        @keyframes largura {
-            0% {
-                width: 50px;
-                height: 50px;
-            }
-            50% {
-                width: 30px;
-                height: 30px;
-            }
-            100% {
-                width: 50px;
-                height: 50px;
-            }
-        }
-    </style>
-</head>
+      .preloadGame {
+        font-family: "Barones";
+        width: 100%;
+        height: 100%;
+        font-size: 5em;
+        background-color: brown;
+        color: burlywood;
+        position: relative;
+      }
 
-<body>
+      .preloadGame .titleApp {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        text-align: center;
+        z-index: 3;
+      }
+
+      .preloadGame .cilcleLoad {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        border: 3px solid burlywood;
+        animation: load 2s infinite linear;
+      }
+
+      .preloadGame .cilcleLoad div {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        background-color: brown;
+        animation: largura 2s infinite linear;
+      }
+
+      @keyframes load {
+        0% {
+          transform: rotate(360deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
+      @keyframes largura {
+        0% {
+          width: 50px;
+          height: 50px;
+        }
+        50% {
+          width: 30px;
+          height: 30px;
+        }
+        100% {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
     <div class="preloadGame">
-        <div class="titleApp">Tree Cuter</div>
-        <div class="cilcleLoad">
-            <div></div>
-        </div>
+      <div class="titleApp">Tree Cuter</div>
+      <div class="cilcleLoad">
+        <div></div>
+      </div>
     </div>
 
     <div class="baraSup"></div>
     <div class="gameView">
-        <div class="player">player
-            <div class="army">
-                <div class="axe">axe</div>
-            </div>
+      <div class="player">
+        player
+        <div class="army">
+          <div class="axe">axe</div>
         </div>
-        <div class="trees">
-            <div class="tree t1" style="--treeH:0.5; --treeDelay:0.1s">tree 01 </div>
-            <div class="tree t1" style="--treeH:0.4; --treeDelay:0.5s">tree 02 </div>
-            <div class="tree t1" style="--treeH:0.8; --treeDelay:0.8s">tree 03 </div>
-            <div class="tree t1" style="--treeH:1.2; --treeDelay:1.5s">tree 04 </div>
-            <div class="tree t1" style="--treeH:0.3; --treeDelay:2.1s">tree 05 </div>
-            <div class="tree t1" style="--treeH:0.7; --treeDelay:2.7s">tree 06 </div>
-            <div class="tree t1" style="--treeH:0.1; --treeDelay:3.5s">tree 07 </div>
-            <div class="tree t1" style="--treeH:0.9; --treeDelay:3.9s">tree 08 </div>
-            <div class="tree t1" style="--treeH:1.7; --treeDelay:4.2s">tree 09 </div>
-            <div class="tree t1" style="--treeH:1; --treeDelay:4.8s">tree 10 </div>
+      </div>
+      <div class="trees">
+        <div class="tree t1" style="--treeH: 0.5; --treeDelay: 0.1s">
+          tree 01
         </div>
+        <div class="tree t1" style="--treeH: 0.4; --treeDelay: 0.5s">
+          tree 02
+        </div>
+        <div class="tree t1" style="--treeH: 0.8; --treeDelay: 0.8s">
+          tree 03
+        </div>
+        <div class="tree t1" style="--treeH: 1.2; --treeDelay: 1.5s">
+          tree 04
+        </div>
+        <div class="tree t1" style="--treeH: 0.3; --treeDelay: 2.1s">
+          tree 05
+        </div>
+        <div class="tree t1" style="--treeH: 0.7; --treeDelay: 2.7s">
+          tree 06
+        </div>
+        <div class="tree t1" style="--treeH: 0.1; --treeDelay: 3.5s">
+          tree 07
+        </div>
+        <div class="tree t1" style="--treeH: 0.9; --treeDelay: 3.9s">
+          tree 08
+        </div>
+        <div class="tree t1" style="--treeH: 1.7; --treeDelay: 4.2s">
+          tree 09
+        </div>
+        <div class="tree t1" style="--treeH: 1; --treeDelay: 4.8s">tree 10</div>
+      </div>
     </div>
     <div class="controlPane"></div>
 
-
-    <script src="js/jquery.min.js "></script>
-    <script src="js/jcanvas.min.js "></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jcanvas/21.0.1/min/jcanvas.min.js"
+      integrity="sha512-pu2L+33GBCuTrTU3mNJphG2Hm2JKlLA01280LIiz29D40f/UFOU5dEVxVuW46p+HZeZhXvQsUxtVFxPabX9S9g=="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/game.js "></script>
+
     <script>
-        $(document).ready(
-            setTimeout(function() {
-                $(".preloadGame").hide()
-            }, /*2000*/ 0)
-        )
+      $(document).ready(
+        setTimeout(function () {
+          $(".preloadGame").hide();
+        }, /*2000*/ 0)
+      );
     </script>
-</body>
-
-</html>
-
-</html>
-
+  </body>
 </html>
