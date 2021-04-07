@@ -1,19 +1,34 @@
 {
   "name": "jjgaming",
-  "version": "1.2.10",
-  "description": "Um mini servidor de jogos para estudo e distração",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/WilkerLopes/JJGaming.git"
+  "dependencies": {
+    "@splidejs/vue-splide": "^0.3.5",
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuetify": "^2.4.9",
+    "vuex": "^3.4.0"
   },
-  "author": "Wilker Lopes",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/WilkerLopes/JJGaming/issues"
-  },
-  "homepage": "https://github.com/WilkerLopes/JJGaming#readme"
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.12.0",
+    "sass": "^1.32.0",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-vuetify": "~2.3.1",
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.7.0"
+  }
 }
