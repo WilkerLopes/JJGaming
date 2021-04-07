@@ -1,122 +1,118 @@
-@font-face {
-    font-family: "Confortaa";
-    src: url(../assets/fonts/Comfortaa-Light.ttf);
-}
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 
 @font-face {
-    font-family: "Barones";
-    src: url(../assets/fonts/BaroneysTextured.ttf);
+  font-family: "Barones";
+  src: url(../assets/fonts/BaroneysTextured.ttf);
 }
 
 :root {
-    --color-01: #a52a2a;
-    --color-02: #deb887;
-    --color-03: ;
-    --color-04: ;
-    --color-05: ;
+  --color-01: #a52a2a;
+  --color-02: #deb887;
+  --color-03: ;
+  --color-04: ;
+  --color-05: ;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: "Confortaa";
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Comfortaa";
 }
 
 .baraSup {
-    width: 100%;
-    height: 56px;
-    background-color: var(--color-01);
-    color: var(--color-02);
+  width: 100%;
+  height: 56px;
+  background-color: var(--color-01);
+  color: var(--color-02);
 }
 
 .gameView {
-    width: 100%;
-    height: calc(50% - 28px);
-    background-image: url(../assets/background/forestBg.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
+  width: 100%;
+  height: calc(50% - 28px);
+  background-image: url(../assets/background/forestBg.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
 .player {
-    width: 25px;
-    height: 50px;
-    border: 1px solid red;
-    position: absolute;
-    bottom: 0;
-    left: 25%;
-    font-size: 0.5em;
-    color: white;
+  width: 25px;
+  height: 50px;
+  border: 1px solid red;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  font-size: 0.5em;
+  color: white;
 }
 
 .army {
-    width: 30px;
-    height: 10px;
-    border: 1px solid pink;
-    position: absolute;
-    top: 25%;
-    right: 0;
-    transform: rotate(0deg) translate(50%, 0%);
-    animation: axeCut 0.5s 4.25s infinite linear;
+  width: 30px;
+  height: 10px;
+  border: 1px solid pink;
+  position: absolute;
+  top: 25%;
+  right: 0;
+  transform: rotate(0deg) translate(50%, 0%);
+  animation: axeCut 0.5s 4.25s infinite linear;
 }
 
 .axe {
-    width: 30px;
-    height: 10px;
-    border: 1px solid red;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 20px;
-    height: 8px;
+  width: 30px;
+  height: 10px;
+  border: 1px solid red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 8px;
 }
 
 .trees {
-    width: 70%;
-    height: 100%;
-    background-color: #4448;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+  width: 70%;
+  height: 100%;
+  background-color: #4448;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .tree {
-    width: 20px;
-    height: calc(100px + (100px * var(--treeH)));
-    border: 1px solid blueviolet;
-    position: absolute;
-    bottom: 0;
-    right: calc(0% - 25px);
-    animation: moveTree 5s var(--treeDelay) linear infinite;
-    color: white;
-    font-size: 0.5em;
+  width: 20px;
+  height: calc(100px + (100px * var(--treeH)));
+  border: 1px solid blueviolet;
+  position: absolute;
+  bottom: 0;
+  right: calc(0% - 25px);
+  animation: moveTree 5s var(--treeDelay) linear infinite;
+  color: white;
+  font-size: 0.5em;
 }
 
 @keyframes moveTree {
-    0% {
-        right: calc(0% - 25px);
-    }
-    95% {
-        right: calc(100% - 20px);
-    }
-    100% {
-        right: calc(100% - 20px);
-    }
+  0% {
+    right: calc(0% - 25px);
+  }
+  95% {
+    right: calc(100% - 20px);
+  }
+  100% {
+    right: calc(100% - 20px);
+  }
 }
 
 @keyframes axeCut {
-    0% {
-        transform: rotate(0deg) translate(50%, 0%);
-        ;
-    }
-    100% {
-        transform: rotate(360deg) translate(50%, 0%);
-    }
+  0% {
+    transform: rotate(0deg) translate(50%, 0%);
+  }
+  100% {
+    transform: rotate(360deg) translate(50%, 0%);
+  }
 }
 
 .controlPane {
-    width: 100%;
-    height: calc(50% - 28px);
-    background-color: cadetblue;
+  width: 100%;
+  height: calc(50% - 28px);
+  background-color: cadetblue;
 }
