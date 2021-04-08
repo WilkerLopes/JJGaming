@@ -52,7 +52,7 @@
 .energia:hover,
 .dano:hover {
   border: 2px #222;
-  border-style: dotted dotted solid dotted;
+  border-style: dotted dotted solid;
 }
 
 .money {
@@ -88,7 +88,7 @@
 }
 
 /*
- Info bot 
+ Info bot
 
 <div class="infoBot">
     <div class="player">
@@ -133,7 +133,7 @@
 .lvlBot {
   position: absolute;
   bottom: 0;
-  right: 0px;
+  right: 0;
   width: 20px;
   height: 20px;
   transform: translateX(25%);
